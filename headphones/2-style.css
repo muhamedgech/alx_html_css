@@ -1,0 +1,310 @@
+/* Existing styles */
+body {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav a:hover {
+  color: #FF6565;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom */
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 637px;
+  margin: 100px auto;
+}
+
+button {
+  height: 44px;
+  width: 162px;
+  cursor: pointer;
+  opacity: 0.9;
+  background-color: #FF6565;
+  border-radius: 10px;
+  display: block;
+  color: #ffffff;
+  margin: 20px auto;
+}
+
+.home p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 100%;
+}
+
+.top {
+  width: 100%;
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.whatwedo,
+.Our_results{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Align content to the bottom */
+    width: 100%;
+    height: 650px;
+}
+
+.whatwedo_one {
+ 
+  max-width: 637px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.iconmusic {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 192px;
+  max-height: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 140px;
+    height: 170px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 14px;
+  color: black;
+}
+
+.Our_results_one {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Our_results_one p {
+  max-width: 637px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ddd;
+  padding: 50px;
+}
+
+.Our_results {
+  width: 100%;
+  background-image: url("images/headphones_hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.pentagon-container {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pentagon {
+  position: relative;
+  width: 180px; /* 40% of the viewport width */
+  height: 180px; /* 40% of the viewport height */
+ 
+}
+
+.pentagon img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+}
+
+.pentagon p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  color: white;
+  font-size: 14px; /* Make font size relative to viewport width */
+}
+
+.pentagon h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-size: 24px; /* Adjust size based on viewport width */
+}
+
+
+@media (min-width: 600px) and (max-width: 750px)  {
+  .whatwedo_one {
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .iconmusic {
+    flex-direction: row; /* Align icons in two columns */
+    gap: 50px;
+    justify-content: center; /* Distribute cards evenly */
+  }
+
+  /* Adjust card width to 45% for two per row */
+  .card {
+    width: 45%;  /* Cards will take up 45% of the row, leaving space for 2 per row */
+    margin-bottom: 20px; /* Add space between rows */
+  }
+  .pentagon {
+    width: 45%;  /* Pentagons will take up 45% of the row */
+    margin-bottom: 20px; /* Add space between rows */
+  }
+
+  .pentagon-container {
+    display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center; /* Distribute pentagons evenly */
+  }
+  
+}
+
+
+
+/* Hide the navigation on small screens */
+@media (max-width: 600px) {
+  .nav ul {
+    display: none; /* Hide navigation */
+  }
+  header{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+ 
+  .hamburger {
+    display: block; /* Show the hamburger icon */
+    cursor: pointer;
+    
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(1, 0, 5);
+    margin: 15px;
+  
+  }
+
+  .nav.open ul {
+    display: flex; /* Show navigation when the hamburger is clicked */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #071629;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home p {
+    font-size: 14px;
+  }
+  
+
+  .iconmusic {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Adjust the gap between items */
+    justify-content: center; /* Center the icons */
+  }
+
+  /* Adjust the card style to fit one per row */
+  .card {
+    width: 100%;  /* One card per row */
+    margin-bottom: 20px; /* Add space between cards */
+    text-align: center; /* Center the card text */
+  }
+  /* Ensure the "whatwedo" and "Our_results" sections take full width */
+  .whatwedo {
+    height: auto;
+  }
+
+  
+  /* Adjust the pentagon style to fit one per row */
+  .pentagon {
+    width: 70%;  /* One pentagon per row */
+    margin-bottom: 20px; /* Add space between pentagons */
+  }
+
+  /* Adjust the pentagon container for wrapping items */
+  .pentagon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center pentagons */
+  }
+
+  /* Ensure the "whatwedo" and "Our_results" sections take full width */
+  .whatwedo,
+  .Our_results {
+    height: auto;
+  }
+
+  /* Ensure full width for "whatwedo_one" and "Our_results_one" */
+  .whatwedo_one,
+  .Our_results_one {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
