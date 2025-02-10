@@ -1,0 +1,281 @@
+/* Global Styles */
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 25;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    width: 162px;
+    height: 44px;
+    color: #C271FF;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    font-weight: bold;
+}
+
+/* Hero Section */
+main section:first-of-type {
+    
+    background-image:url('./images/Object.png');
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+
+main section:first-of-type h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+main section:first-of-type span {
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.2rem;
+    color: #e7edf0;
+    font-weight: bold;
+}
+
+main section:first-of-type button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #c00cb1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+main section:first-of-type button:hover {
+    background: #9b0f94;
+}
+main section:first-of-type div div  {
+    justify-content: center;
+    display: flex;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+main section:first-of-type div div div {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Team Section */
+main section:nth-of-type(2) {
+    background: #b131ca;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+main section:nth-of-type(2) h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+main section:nth-of-type(2) div {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+/* Quote Section */
+main section:nth-of-type(3) {
+   
+    
+    padding: 50px 20px;
+    background: #f3eef3;
+    gap: 20px;
+
+}
+main section:nth-of-type(3)>div>div>div {
+   
+    display: flex;
+    
+
+}
+.innerlogo>img{
+   
+    
+    width: 50px;
+    height: 40px;
+    
+    background: #f3eef3;
+    gap: 20px;
+
+}
+.innerhorzontal{
+    display: flex; 
+}
+.tutorials{
+    justify-content: center;
+    display: flex;
+    
+    padding: 50px 20px;
+    background: #f3eef3;
+    gap: 20px;
+
+}
+
+main section:nth-of-type(3) blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+main section:nth-of-type(3) h3 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+main section:nth-of-type(3) p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Gallery Section */
+main section:nth-of-type(4) {
+    text-align: center;
+    background: #071629;
+    
+}
+.membership{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+main section:nth-of-type(4) h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main section:nth-of-type(4) div {
+   
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main section:nth-of-type(4) div div {
+    text-align: center;
+    max-width: 250px;
+}
+
+main section:nth-of-type(4) div div img {
+    border-radius: 10px;
+}
+
+main section:nth-of-type(4) div div h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #071629;
+}
+
+
+main section:nth-of-type(4) div div p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #071629;
+}
+
+main section:nth-of-type(4) div div div {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+/* FAQ Section */
+main section:nth-of-type(5) {
+    padding: 50px 20px;
+}
+
+main section:nth-of-type(5) h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*main section:nth-of-type(5)>div {
+    display: flex;
+   
+    gap: 20px;
+}*/
+.faq{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+main section:nth-of-type(5) div div h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background: #071629;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+footer section div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+footer section div img {
+    max-width: 50px;
+    color: #FFFFFF;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #f2f3f5;
+}
